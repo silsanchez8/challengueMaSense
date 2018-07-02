@@ -1,22 +1,4 @@
-/*Reset*/
-body, html {
-  height: 100%;
-  margin: 0; 
-}
-
-input:focus {
-	outline: 0;
-    -moz-outline:0;
-    -webkit-outline:0;
-}
-
-ul, ol {
-	list-style: none;
-	margin: 0;
-	padding:0;
-}
-  	
-/*Index*/
+/*Index*/  
 .main {
 	background-image: url("../../Content/img/background-image.jpg");
 	height: 100%;
@@ -59,7 +41,7 @@ ul, ol {
 		display:block;
 	}
 } 
-/*Mobile Only - Index*/
+/*Mobile Only - Index*/ 
 
 @include mobile-only{
 .main {background-image: url("../../Content/img/mobile/background-image.jpg")}
