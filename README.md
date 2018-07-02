@@ -8,7 +8,7 @@ Voy a utilizar el comando npm ( de Node) para instalar sass de manera global en 
 
 Aspectos a aclarar:
 Separé las mediaqueries al final de cada hoja/modulo de scss, para tener mas claridad en el código.
-Si bien la consigna indica sólo maquetar las versiones desktop y mobile, también las versiones intermedias estan incluídas.
+Si bien la consigna indica sólo maquetar las versiones desktop y mobile, también las versiones intermedias estan incluidas.
 
 
 
