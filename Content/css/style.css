@@ -146,7 +146,8 @@ ul, ol {
   display: inline-block;
   padding: 20px 0 0 0; }
   .sale:before {
-    content: url(../../Content/img/logo-modal.svg);
+    content: "";
+    background: url(../../Content/img/logo-modal.svg) no-repeat;
     width: 80px;
     height: 30px;
     display: block;
@@ -212,6 +213,8 @@ ul, ol {
     height: 40px;
     width: 90%;
     padding: 0 14px; }
+  .contact input[type=text]::-ms-clear {
+    display: none; }
   .contact input[type=text]:focus {
     background-color: #fff;
     color: #000; }
