@@ -1,0 +1,36 @@
+$mq-mobile-portrait   : 320px !default;
+$mq-mobile-landscape  : 480px !default; 
+$mq-tablet-portrait   : 800px !default;
+$mq-tablet-landscape  : 1024px !default;
+$mq-desktop           : 1382px !default;    
+
+
+ 
+/* Smartphones (portrait and landscape) ----------- */
+@mixin mobile-only {
+  @media (max-width : $mq-mobile-landscape) {
+  @content;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@mixin mobile-portrait-only {
+  @media (max-width : $mq-mobile-portrait) {
+  @content;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@mixin mobile-landscape-only {
+  @media only screen 
+  and (min-width : $mq-mobile-portrait + 1) 
+  and (max-width : $mq-mobile-landscape) {
+  @content;
+  }
+}
+
+@mixin desktop-only {
+  @media only screen and (min-width : $mq-tablet-landscape + 1) {
+  @content;
+  }
+}

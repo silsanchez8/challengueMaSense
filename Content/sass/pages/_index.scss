@@ -1,0 +1,81 @@
+/*Reset*/
+body, html {
+  height: 100%;
+  margin: 0; 
+}
+
+input:focus {
+	outline: 0;
+    -moz-outline:0;
+    -webkit-outline:0;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+  	
+/*Index*/
+.main {
+	background-image: url("../../Content/img/background-image.jpg");
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+}
+.subscribe {
+	 	display: block;
+	    width:auto;
+	    padding: 50px 30px;
+	    margin: auto;
+	    height: 50%;
+	    max-width: 800px;
+	    padding-top: 15vw;
+  	.logo {
+		margin: 0 auto;
+		display: block;
+		fill: #fff;
+		text-align: center;
+		background: url(../../Content/img/logo.svg) no-repeat;
+		width: 140px;
+		height: 50px;
+		text-indent: -10000px;
+  	}
+	h2.title {
+		font: 1.8em "opensans-bold";
+		color:#fff;
+		text-align: center;
+	}
+	.description {
+		font: 14px "opensans";
+	    color: #fff;
+	    text-align: center;
+	}
+	.btn {
+		margin: 30px auto 20px;
+		display:block;
+	}
+} 
+/*Mobile Only - Index*/
+
+@include mobile-only{
+.main {background-image: url("../../Content/img/mobile/background-image.jpg")}
+.subscribe {
+	padding-top: 20vw;
+	h2.title{font-size: 1.5em;}
+	.logo{
+		width: 80px;
+		height: 40px;
+	}
+} 
+
+}
+@include desktop-only {
+	.subscribe {
+		width: 60%;
+		padding-top: 7vw;
+  	}
+}

@@ -1,0 +1,89 @@
+
+/*Buttons*/
+.btn{
+	background-color: #b73131; 
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 50px;
+	text-transform: uppercase;
+	cursor:pointer;
+	font-family: "opensans-semibold";
+	outline: none;
+	transition: all 0.25s ease-out 0s;
+	-moz-transition: all 0.25s ease-out 0s;
+	-o-transition: all 0.25s ease-out 0s;
+	-ms-transition: all 0.25s ease-out 0s;
+	-webkit-transition: all 0.25s ease-out 0s;
+	&:hover {background-color:#891b1b;}
+}
+
+.btn-large {
+	@extend .btn;
+	padding: 20px 50px;
+	font-size: 15px;
+}
+
+.btn-small {
+	@extend .btn;
+	padding: 15px 30px;
+	font-size: 12px;
+}
+
+
+/*Checkbox*/
+.checkbox-form {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	margin: 10px 0 0;
+	cursor: pointer;
+	font: 0.8em "opensans";
+	font-style: italic;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	}
+	input:checked ~ .check:after {
+	  display: block;
+	}
+
+	.check {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 15px;
+		width: 15px;
+		background-color: #eee;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		
+		&:after {
+		content: "";
+		position: absolute;
+		display: none;
+		left: 4px;
+		top: 0px;
+		width: 5px;
+		height: 10px;
+		border: solid #666;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		}
+	}
+	.check.error {border-color:#e34f45;}
+
+}
+
+
+
+
